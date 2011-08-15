@@ -1,5 +1,6 @@
-require 'jrank'
+
 require 'rails'
+require 'rails/search'
 
 module Jrank
 	class Engine < Rails::Engine
