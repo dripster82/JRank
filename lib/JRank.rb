@@ -1,2 +1,1 @@
-require 'jrank/search'
-require 'jrank/routing'
+require 'jrank/engine' if defined?(Rails)
