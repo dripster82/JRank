@@ -1,5 +1,5 @@
 <% if total_pages.to_i > 1 %>
-	<ul>
+	<ul class="jrank_paging">
 	<% pages.each do |page| %>
 		<li>
 			<%= page.number.to_i+1 if html_render(page.number) != "&hellip;" && page.number == current_page%>
