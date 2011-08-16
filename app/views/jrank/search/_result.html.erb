@@ -1,5 +1,5 @@
 <li>
-	<h3><%= entry.title %></h3>
-	<p><%= entry.content %></p>
-	<p><%= link_to entry.url %></p>
+	<h3><%= html_render(entry.title) %></h3>
+	<p><%= html_render(entry.content) %></p>
+	<p><%= link_to entry.url, entry.url %></p>
 </li>

@@ -2,8 +2,12 @@
 <p>Form goes here</p>
 
 <ul>
-<% @jrank.entries.each do |entry| %>
-	<%= render "result", :entry => entry  %>
-<% end %>
+	<% if @jrank.meta.total > "0" %>
+		<%= @jrank.entries.each do |entry| %>
+			<%= render "result", :entry => entry %>
+		<% end %>
+	<% else %>
+		<li>No results found for <%= @jrank.meta.query %></li>
+	<% end %>
 </ul>
 <%= render "paging", :pages => @jrank.pages %>

@@ -7,6 +7,6 @@ class Jrank::SearchController < ApplicationController
 	end
 
 	def show
-	  @jrank = Jrank::Search.new.find(@query, @start ||= 0, @limit ||= 10)
+		@jrank = Jrank::Search.new.find(params[:query], params[:start] ||= 0, params[:limit] ||= 10)
 	end
 end
