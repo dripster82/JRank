@@ -1,8 +1,0 @@
-<h1>JRank Site Search Results</h1>
-<p>Form goes here</p>
-
-<% @jrank.entities.each do |entity| %>
-	<%= render "result", :entity => entity  %>
-<% end %>
-
-<%= render "paging", :pages => @jrank.pages %>
