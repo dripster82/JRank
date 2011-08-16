@@ -1,4 +1,4 @@
-class JrankSearchController < ApplicationController
+class JranksearchController < ApplicationController
 
 	unloadable
 
