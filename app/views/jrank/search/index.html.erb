@@ -5,5 +5,5 @@
 <% unless @jrank.nil? %>
 	<%= render "results", :entries => @jrank.entries, :total => @jrank.meta.total, :query => @jrank.meta.query %>
 
-	<%= render "paging", :pages => @jrank.pages, :current_page => @jrank.meta.current_page %>
+	<%= render "paging", :pages => @jrank.pages, :current_page => @jrank.meta.current_page, :total_pages => @jrank.meta.total_pages %>
 <% end %>

@@ -1,6 +1,7 @@
-<% form_tag(jrank_search_path) %>
+<%= form_tag(jrank_search_path) do%>
 	<%= field_set_tag "Search Form" do %>
 		<%= label_tag "query", "Search" %>
 		<%= search_field_tag "query" %>
+		<%= submit_tag "Submit" %>
 	<% end %>
 <% end %>
