@@ -3,6 +3,7 @@
 <%= render "form" %>
 
 <% unless @jrank.nil? %>
+	<h2>Results for "<%= @jrank.meta.query %>"</h2>
 	<%= render "results", :entries => @jrank.entries, :total => @jrank.meta.total, :query => @jrank.meta.query %>
 
 	<%= render "paging", :pages => @jrank.pages, :current_page => @jrank.meta.current_page, :total_pages => @jrank.meta.total_pages %>
