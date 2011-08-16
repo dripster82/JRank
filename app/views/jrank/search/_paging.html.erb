@@ -1,1 +1,11 @@
-<p>Paging</p>
+<ul>
+<% pages.each do |page| %>
+	<li>
+		<% if page.number == current_page %>
+			page.number
+		<% else %>
+			<% link_to page.number, params.merge{ :start => page.start } %>
+		<% end %>
+	</li>
+<% end %>
+</ul>

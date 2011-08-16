@@ -1,13 +1,2 @@
 <h1>JRank Site Search Results</h1>
 <p>Form goes here</p>
-
-<ul>
-	<% if @jrank.meta.total > "0" %>
-		<%= @jrank.entries.each do |entry| %>
-			<%= render "result", :entry => entry %>
-		<% end %>
-	<% else %>
-		<li>No results found for <%= @jrank.meta.query %></li>
-	<% end %>
-</ul>
-<%= render "paging", :pages => @jrank.pages %>
