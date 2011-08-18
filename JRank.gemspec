@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Paul Ketelle & Dave Almond"]
   s.email       = ["paul@ketelle.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/dripster82/JRank"
   s.summary     = %q{JRank search gem for rails}
   s.description = %q{Adds easy to use JRank search to any website}
 
