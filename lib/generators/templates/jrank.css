@@ -1,0 +1,27 @@
+.jrank_entries {
+	list-style:none;
+}
+.jrank_paging {
+	margin-bottom:20px;
+	overflow:hidden;
+}
+.jrank_paging li{
+	float:left;
+	display:inline-block;
+	margin: 0 5px;
+}
+
+.jrank_paging li a, .jrank_paging li span {
+	display:block;
+	width:25px;
+	height:22px;
+	padding-top:3px;
+	border:1px solid #ccc;
+	text-align:center;
+}
+.jrank_form fieldset{
+	border:none;
+}
+.jrank_form legend {
+	display:none;
+}

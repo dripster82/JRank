@@ -1,3 +1,1 @@
-module Jrank
-  # Your code goes here...
-end
+require 'jrank/engine' if defined?(Rails)

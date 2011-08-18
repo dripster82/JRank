@@ -1,0 +1,9 @@
+	<ul class="jrank_entries">
+		<% if total > "0" %>
+			<% entries.each do |entry| %>
+				<%= render "result", :entry => entry %>
+			<% end %>
+		<% else %>
+			<li>No results found for <%= query %></li>
+		<% end %>
+	</ul>

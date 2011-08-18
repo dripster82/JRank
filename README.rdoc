@@ -1,0 +1,40 @@
+= JRank
+
+JRank.org search engine plugin
+
+== Install
+
+=== JRank.org
+
+Go to Jrank.org and create an account and setup your site. Making note of the sites apikey.
+
+=== Rails 3
+
+You can let bundler install JRank by adding this line to your application's Gemfile:
+
+  gem 'jrank'
+
+And then execute:
+
+  bundle install
+
+Or install it yourself as:
+
+  gem install jrank
+
+Then run jrank install
+
+  rails g jrank:install
+
+== Usage
+
+Edit the file config/jrank.yml:
+
+  development:
+    jrank_apikey: apikey_here
+
+  test:
+    ...
+
+  production:
+    ...

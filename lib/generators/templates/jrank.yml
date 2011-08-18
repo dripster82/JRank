@@ -1,0 +1,8 @@
+development:
+  jrank_apikey: [enter Jrank Api Key Here]
+
+test:
+  jrank_apikey: [enter Jrank Api Key Here]
+
+production:
+  jrank_apikey: [enter Jrank Api Key Here]

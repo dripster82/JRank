@@ -1,0 +1,16 @@
+<% if total_pages.to_i > 1 %>
+	<ul class="jrank_paging">
+	<% pages.each do |page| %>
+		<li>
+			<% unless page.number == current_page or html_render(page.number) == "&hellip;" %>
+				<%= link_to (page.number.to_i+1), params.merge( :start => page.start ) %>
+			<% else %>
+				<span>
+					<%= page.number.to_i+1 if html_render(page.number) != "&hellip;" && page.number == current_page%>
+					<%= html_render(page.number) if html_render(page.number) == "&hellip;" %>
+				</span>
+			<% end %>
+		</li>
+	<% end %>
+	</ul>
+<% end %>
