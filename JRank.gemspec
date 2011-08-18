@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.summary     = %q{JRank search gem for rails}
   s.description = %q{Adds easy to use JRank search to any website}
 
-  s.rubyforge_project = "JRank"
+  s.rubyforge_project = "Jrank"
 
   s.add_dependency 'xml-object'
   
